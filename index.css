@@ -30,3 +30,31 @@ body{
     background-color: goldenrod;
     border-radius: 2px;
 }
+#b3{
+    color: #016f32;
+    font-weight: bold;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: goldenrod;
+    border-radius: 2px;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.players{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem auto;
+}
+.player{
+    min-width: 220px;
+    padding: 0.5rem 1rem;
+    border: 1px solid goldenrod;
+    border-radius: 4px;
+}
+.player h2{
+    margin: 0.25rem 0;
+}

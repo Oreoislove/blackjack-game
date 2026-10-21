@@ -9,12 +9,26 @@
 <body>
     <h1>BlackJack</h1>
     <h2>No clown in deck because the real clown is <a href="https://github.com/PREPMND" target="_blank">Srijan.</a>.</h2>
-    <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-    <p>Wins: <span id="wins-el">0</span> | Losses: <span id="losses-el">0</span></p>
+    <p id="message-el">Start a round for both players.</p>
+    <section class="players">
+        <article class="player">
+            <h2>Player 1</h2>
+            <p id="player-1-status-el">Waiting</p>
+            <p id="player-1-cards-el">Cards:</p>
+            <p id="player-1-sum-el">Sum: 0</p>
+        </article>
+        <article class="player">
+            <h2>Player 2</h2>
+            <p id="player-2-status-el">Waiting</p>
+            <p id="player-2-cards-el">Cards:</p>
+            <p id="player-2-sum-el">Sum: 0</p>
+        </article>
+    </section>
+    <p>Player 1 Wins: <span id="player-1-wins-el">0</span> | Player 2 Wins: <span id="player-2-wins-el">0</span> |
+    Draws: <span id="draws-el">0</span></p>
     <button onclick="startGame()" id="b1">Start game</button>
-    <button onclick="newCard()" id="b2">New card</button>
+    <button onclick="hit()" id="b2" disabled>Hit</button>
+    <button onclick="stand()" id="b3">Stand</button>
     <script src="index.js"></script>
     
 </body>
